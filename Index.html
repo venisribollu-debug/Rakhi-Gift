@@ -1,0 +1,979 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌸 Happy Raksha Bandhan Akka</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background: #1a0a12;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* ===== WRAPPER ===== */
+        .wrapper {
+            max-width: 700px;
+            width: 100%;
+            background: linear-gradient(145deg, #fce4ec, #f8bbd0);
+            border-radius: 48px;
+            padding: 40px 30px;
+            box-shadow: 0 20px 60px rgba(233, 30, 99, 0.25);
+            border: 2px solid rgba(233, 30, 99, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* ===== DECORATIVE PINK GLOW ===== */
+        .glow {
+            position: absolute;
+            top: -80px;
+            right: -80px;
+            width: 280px;
+            height: 280px;
+            background: radial-gradient(circle, rgba(233, 30, 99, 0.08), transparent);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .glow2 {
+            position: absolute;
+            bottom: -80px;
+            left: -80px;
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(233, 30, 99, 0.06), transparent);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        /* ===== RAKHI ICON ===== */
+        .rakhi-icon {
+            text-align: center;
+            font-size: 3.5rem;
+            color: #e91e63;
+            margin-bottom: 8px;
+        }
+
+        /* ===== TITLE ===== */
+        .title {
+            text-align: center;
+            font-size: 2.4rem;
+            font-weight: 700;
+            font-style: italic;
+            color: #880e4f;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #ad1457;
+            margin-bottom: 18px;
+            border-bottom: 2px dashed #f48fb1;
+            padding-bottom: 14px;
+        }
+
+        /* ===== SHIELDS ===== */
+        .shields {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            margin: 12px 0 18px;
+        }
+
+        .shield {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(4px);
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: 2px solid #e91e63;
+            font-weight: 700;
+            color: #880e4f;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.1);
+            flex: 1 1 auto;
+            justify-content: center;
+            min-width: 120px;
+        }
+
+        .shield i {
+            font-size: 1.2rem;
+            color: #e91e63;
+        }
+
+        .shield.father {
+            border-color: #ad1457;
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        /* ===== FAMILY LINE ===== */
+        .family-line {
+            text-align: center;
+            font-size: 0.95rem;
+            color: #880e4f;
+            font-weight: 600;
+            padding: 8px 12px;
+            margin: 4px 0 14px;
+            background: rgba(233, 30, 99, 0.05);
+            border-radius: 30px;
+            border: 1px dashed #f48fb1;
+        }
+
+        .family-line i {
+            color: #e91e63;
+            margin: 0 6px;
+        }
+
+        /* ===== LETTER ===== */
+        .letter {
+            background: rgba(255, 248, 250, 0.85);
+            backdrop-filter: blur(4px);
+            padding: 28px 28px;
+            border-radius: 28px;
+            margin: 16px 0 20px;
+            border-left: 6px solid #e91e63;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .letter::-webkit-scrollbar {
+            width: 5px;
+        }
+        .letter::-webkit-scrollbar-track {
+            background: #fce4ec;
+            border-radius: 10px;
+        }
+        .letter::-webkit-scrollbar-thumb {
+            background: #e91e63;
+            border-radius: 10px;
+        }
+
+        .letter h2 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            font-style: italic;
+            color: #880e4f;
+            text-align: center;
+            margin-bottom: 14px;
+        }
+
+        .letter h2 i {
+            color: #e91e63;
+            margin-right: 10px;
+        }
+
+        .letter p {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #3e1a2b;
+            margin-bottom: 12px;
+        }
+
+        .letter p strong {
+            color: #c2185b;
+        }
+
+        .letter .signature {
+            text-align: right;
+            font-weight: 700;
+            font-style: italic;
+            color: #880e4f;
+            font-size: 1.15rem;
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 2px dashed #f48fb1;
+        }
+
+        .letter .signature i {
+            color: #e91e63;
+            margin: 0 6px;
+        }
+
+        /* ===== BUTTON ===== */
+        .open-btn {
+            display: block;
+            width: 100%;
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(135deg, #e91e63, #ad1457);
+            color: #fff;
+            border: none;
+            padding: 16px;
+            border-radius: 60px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 6px 25px rgba(233, 30, 99, 0.3);
+            margin: 8px 0 4px;
+        }
+
+        .open-btn:hover {
+            transform: scale(1.02) translateY(-2px);
+            box-shadow: 0 10px 35px rgba(233, 30, 99, 0.4);
+        }
+
+        .open-btn i {
+            margin: 0 8px;
+        }
+
+        /* ===== MOTIVATION SECTION ===== */
+        .motivation {
+            display: none;
+            animation: fadeUp 0.6s ease;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 3px dashed #f48fb1;
+        }
+
+        .motivation.show {
+            display: block;
+        }
+
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== RABBIT STORY ===== */
+        .story {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 20px 22px;
+            border-radius: 28px;
+            margin: 16px 0 20px;
+            border: 2px solid #f48fb1;
+        }
+
+        .story h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            font-style: italic;
+            color: #880e4f;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .story h3 i {
+            color: #e91e63;
+            margin-right: 8px;
+        }
+
+        .story p {
+            font-size: 0.98rem;
+            line-height: 1.9;
+            color: #3e1a2b;
+            margin-bottom: 8px;
+        }
+
+        .story .end {
+            text-align: center;
+            font-weight: 700;
+            font-style: italic;
+            color: #880e4f;
+            font-size: 1.05rem;
+            margin-top: 10px;
+        }
+
+        .story .end i {
+            color: #e91e63;
+            margin: 0 4px;
+        }
+
+        /* ===== RABBIT SVG ===== */
+        .rabbit-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin: 8px 0 16px;
+        }
+
+        .rabbit-wrap svg {
+            width: 90px;
+            cursor: pointer;
+            transition: 0.2s;
+            filter: drop-shadow(0 4px 15px rgba(233, 30, 99, 0.15));
+        }
+
+        .rabbit-wrap svg:hover {
+            transform: scale(1.05);
+        }
+
+        .rabbit-wrap .offer {
+            font-size: 2rem;
+            color: #e91e63;
+        }
+
+        /* ===== QUOTE BOX ===== */
+        .quote-box {
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+            padding: 18px 22px;
+            border-radius: 28px;
+            margin: 14px 0 20px;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-left: 5px solid #e91e63;
+            transition: 0.3s;
+        }
+
+        .quote-box p {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #4a1a2c;
+            line-height: 1.7;
+        }
+
+        .quote-box .author {
+            display: block;
+            font-weight: 700;
+            font-style: normal;
+            color: #880e4f;
+            margin-top: 4px;
+            font-size: 0.9rem;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btns {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 12px 0 16px;
+        }
+
+        .btns button {
+            font-family: 'Playfair Display', serif;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+            flex: 1 1 auto;
+            min-width: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btns .pink {
+            background: linear-gradient(135deg, #e91e63, #ad1457);
+            color: #fff;
+            border: none;
+            box-shadow: 0 4px 20px rgba(233, 30, 99, 0.2);
+        }
+
+        .btns .pink:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(233, 30, 99, 0.3);
+        }
+
+        .btns .outline {
+            background: transparent;
+            color: #880e4f;
+            border: 2px solid #e91e63;
+        }
+
+        .btns .outline:hover {
+            background: #e91e63;
+            color: #fff;
+        }
+
+        /* ===== LEARNING ===== */
+        .learn {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 24px;
+            padding: 16px 20px;
+            margin: 14px 0 16px;
+            border: 1px solid #f48fb1;
+        }
+
+        .learn h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #880e4f;
+            margin-bottom: 8px;
+        }
+
+        .learn h3 i {
+            color: #e91e63;
+            margin-right: 8px;
+        }
+
+        .learn ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .learn ul li {
+            padding: 6px 0 6px 8px;
+            font-size: 0.95rem;
+            color: #3e1a2b;
+            border-bottom: 1px dashed #f8bbd0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .learn ul li:last-child {
+            border-bottom: none;
+        }
+
+        .learn ul li strong {
+            color: #c2185b;
+        }
+
+        .learn ul li i {
+            color: #e91e63;
+            margin-left: 4px;
+        }
+
+        .learn .foot {
+            text-align: center;
+            font-style: italic;
+            color: #880e4f;
+            font-size: 0.85rem;
+            margin-top: 8px;
+        }
+
+        .learn .foot i {
+            color: #e91e63;
+            margin-right: 6px;
+        }
+
+        /* ===== MUSIC ===== */
+        .music {
+            background: rgba(233, 30, 99, 0.04);
+            border-radius: 40px;
+            padding: 10px 18px;
+            margin: 10px 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 1px solid #f48fb1;
+        }
+
+        .music span {
+            font-weight: 700;
+            color: #880e4f;
+            font-size: 0.9rem;
+        }
+
+        .music span i {
+            color: #e91e63;
+            margin-right: 6px;
+        }
+
+        .music audio {
+            border-radius: 40px;
+            height: 36px;
+            width: 180px;
+            background: #fce4ec;
+        }
+
+        .music audio::-webkit-media-controls-panel {
+            background: #fce4ec;
+        }
+
+        /* ===== FINAL MESSAGE ===== */
+        .final {
+            background: linear-gradient(135deg, #f06292, #ec407a);
+            color: #fff;
+            padding: 18px 24px;
+            border-radius: 28px;
+            margin: 14px 0 0;
+            text-align: center;
+            box-shadow: 0 6px 30px rgba(233, 30, 99, 0.2);
+            animation: fadeSlide 0.5s ease;
+        }
+
+        @keyframes fadeSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .final h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .final h2 i {
+            margin-right: 8px;
+        }
+
+        .final p {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-top: 6px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 550px) {
+            .wrapper {
+                padding: 24px 16px;
+            }
+
+            .title {
+                font-size: 1.8rem;
+            }
+
+            .letter h2 {
+                font-size: 1.3rem;
+            }
+
+            .letter p {
+                font-size: 0.95rem;
+            }
+
+            .letter {
+                padding: 18px 16px;
+                max-height: 400px;
+            }
+
+            .shield {
+                font-size: 0.8rem;
+                padding: 8px 12px;
+                min-width: 90px;
+            }
+
+            .shield i {
+                font-size: 1rem;
+            }
+
+            .rabbit-wrap svg {
+                width: 70px;
+            }
+
+            .rabbit-wrap .offer {
+                font-size: 1.5rem;
+            }
+
+            .quote-box p {
+                font-size: 0.95rem;
+            }
+
+            .open-btn {
+                font-size: 1rem;
+                padding: 14px;
+            }
+
+            .btns button {
+                font-size: 0.85rem;
+                padding: 8px 14px;
+                min-width: 80px;
+            }
+
+            .music audio {
+                width: 120px;
+            }
+
+            .final h2 {
+                font-size: 1.2rem;
+            }
+
+            .final p {
+                font-size: 0.85rem;
+            }
+
+            .story h3 {
+                font-size: 1.1rem;
+            }
+
+            .story p {
+                font-size: 0.9rem;
+            }
+
+            .rakhi-icon {
+                font-size: 2.8rem;
+            }
+
+            .family-line {
+                font-size: 0.8rem;
+                padding: 6px 10px;
+            }
+
+            .learn h3 {
+                font-size: 1rem;
+            }
+
+            .learn ul li {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- Pink Glows -->
+        <div class="glow"></div>
+        <div class="glow2"></div>
+
+        <!-- ===== RAKHI INTRO ===== -->
+        <div class="rakhi-icon">
+            <i class="fas fa-om"></i>
+        </div>
+
+        <h1 class="title">🌸 Happy Raksha Bandhan 🌸</h1>
+        <div class="subtitle">✨ To My Dearest Akka ✨</div>
+
+        <!-- ===== SHIELDS ===== -->
+        <div class="shields">
+            <div class="shield father">
+                <i class="fas fa-shield-alt"></i>
+                <span>Nanna's Shield</span>
+            </div>
+            <div class="shield">
+                <i class="fas fa-shield-alt"></i>
+                <span>Neesh's Shield</span>
+            </div>
+        </div>
+
+        <div class="family-line">
+            <i class="fas fa-heart"></i>
+            Two Shields. One Family. Always Protecting You.
+            <i class="fas fa-heart"></i>
+        </div>
+
+        <!-- ===== LETTER ===== -->
+        <div class="letter" id="letter">
+            <h2><i class="fas fa-rose"></i> My Dearest Venisri</h2>
+
+            <p><strong>Happy Raksha Bandhan, my dear Akka.</strong></p>
+
+            <p>On this special day, I want you to know something — <strong>I am SO proud of you.</strong></p>
+
+            <p>Proud of the person you are. Proud of the heart you carry. Proud of how you keep going, even when things feel heavy.</p>
+
+            <p>I know you whisper to yourself at night: <em>"I'm a failed sister. I'm a failed daughter. I'm a failed person."</em></p>
+
+            <p><strong>But Akka — that is a LIE.</strong></p>
+
+            <p>You are NOT a failed Akka. You tied this Rakhi with love. You remembered. You cared. That is not failure — that is LOVE.</p>
+
+            <p>You are NOT a failed daughter. Look at those two shields up there — Dad's and mine. They are ALWAYS raised for you. No matter what.</p>
+
+            <p>You are NOT a failed person. You are <strong>21</strong>. You have DECADES ahead. And you have TWO people who will NEVER stop believing in you.</p>
+
+            <p><strong>Venisri — I believe in you.</strong> Dad believes in you too, in his own way.</p>
+
+            <p>You are not a failure. You are a rabbit who is RESTING in a storm. And when the storm passes — and it WILL pass — you will hop higher than anyone expected.</p>
+
+            <p><strong>You are our queen. Forever.</strong></p>
+
+            <div class="signature">
+                <i class="fas fa-heart"></i>
+                Your Neesh
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+
+        <!-- ===== OPEN BUTTON ===== -->
+        <button class="open-btn" id="openBtn">
+            <i class="fas fa-gift"></i> Click to Open Your Gift <i class="fas fa-gift"></i>
+        </button>
+
+        <!-- ========================================= -->
+        <!-- MOTIVATION SECTION -->
+        <!-- ========================================= -->
+        <div class="motivation" id="motivation">
+
+            <!-- ===== RABBIT STORY ===== -->
+            <div class="story">
+                <h3><i class="fas fa-rabbit"></i> The Rabbit Who Found Hope</h3>
+                <p><em>A story for Akka — from your Neesh</em></p>
+
+                <p>Once, in a soft pink meadow, there was a little rabbit named <strong>Veni</strong>.</p>
+
+                <p>She loved the sunrise, the smell of wildflowers, and the way the wind carried songs from faraway hills.</p>
+
+                <p>But one day, Veni tried to hop over a big log — and she fell.</p>
+
+                <p>It wasn't a bad fall. Just a stumble. But Veni looked at the log and whispered: <em>"I'm a failure. I can't even hop like other rabbits."</em></p>
+
+                <p>She stopped hopping. She stopped running. She sat under a tree, convinced she wasn't good enough.</p>
+
+                <p>Her father rabbit — strong, silent, protective — sat at a distance. He never left her side. <strong>He was her shield.</strong></p>
+
+                <p>Her brother rabbit came to her one morning. He wasn't carrying clover this time. He was carrying <strong>a pink Rakhi</strong>.</p>
+
+                <p><em>"Veni,"</em> he said, <em>"tie this on my wrist."</em></p>
+
+                <p>She looked up with teary eyes. <em>"But I'm a failure."</em></p>
+
+                <p>Her brother gently placed the Rakhi in her paw. <em>"Veni, a Rakhi is not for perfect sisters. It's for sisters who LOVE. And you love more than anyone I know."</em></p>
+
+                <p>With trembling paws, Veni tied the Rakhi on her brother's wrist.</p>
+
+                <p><em>"Now,"</em> her brother said, <em>"I am bound to you. Forever. Your pain is my pain. Your joy is my joy. I will ALWAYS protect you."</em></p>
+
+                <p>Veni looked at the Rakhi on her brother's wrist. Then she looked at her own legs. They weren't weak. They were just <strong>RESTING</strong>.</p>
+
+                <p><em>"Veni, you are not a failed rabbit. You are a rabbit who is LEARNING to hop. And when you do — you will hop higher than any rabbit in this meadow."</em></p>
+
+                <p>That night, Veni slept under the stars. And for the first time in months, she dreamed of hopping.</p>
+
+                <p>The next morning, she took one tiny hop. Then another. Then another.</p>
+
+                <p>She wasn't hopping like the others yet. <strong>But she was hopping.</strong></p>
+
+                <p>And on her brother's wrist? <strong>The pink Rakhi shone like a promise.</strong></p>
+
+                <div class="end"><i class="fas fa-heart"></i> And that was enough. That was EVERYTHING. <i class="fas fa-heart"></i></div>
+            </div>
+
+            <!-- ===== RABBIT SVG ===== -->
+            <div class="rabbit-wrap">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" id="rabbit">
+                    <!-- Body -->
+                    <ellipse cx="60" cy="78" rx="30" ry="24" fill="#f8bbd0" stroke="#e91e63" stroke-width="2"/>
+                    <!-- Head -->
+                    <circle cx="60" cy="50" r="24" fill="#f8bbd0" stroke="#e91e63" stroke-width="2"/>
+                    <!-- Left Ear -->
+                    <ellipse cx="40" cy="26" rx="10" ry="24" fill="#f48fb1" stroke="#e91e63" stroke-width="2" transform="rotate(-15 40 26)"/>
+                    <!-- Right Ear with Rakhi -->
+                    <ellipse cx="80" cy="26" rx="10" ry="24" fill="#f48fb1" stroke="#e91e63" stroke-width="2" transform="rotate(15 80 26)"/>
+                    <!-- Pink Rakhi on Ear -->
+                    <circle cx="80" cy="20" r="6" fill="none" stroke="#e91e63" stroke-width="3"/>
+                    <circle cx="80" cy="20" r="3" fill="#e91e63"/>
+                    <line x1="74" y1="20" x2="68" y2="20" stroke="#e91e63" stroke-width="2"/>
+                    <line x1="86" y1="20" x2="92" y2="20" stroke="#e91e63" stroke-width="2"/>
+                    <!-- Eyes -->
+                    <circle cx="50" cy="48" r="4" fill="#4a1a2c"/>
+                    <circle cx="70" cy="48" r="4" fill="#4a1a2c"/>
+                    <circle cx="48" cy="46" r="1.5" fill="white"/>
+                    <circle cx="68" cy="46" r="1.5" fill="white"/>
+                    <!-- Nose -->
+                    <ellipse cx="60" cy="58" rx="5" ry="3" fill="#e91e63"/>
+                    <!-- Smile -->
+                    <path d="M54 62 Q60 68 66 62" stroke="#4a1a2c" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Tail -->
+                    <circle cx="90" cy="78" r="7" fill="#f8bbd0" stroke="#e91e63" stroke-width="1.5"/>
+                    <!-- Cheeks -->
+                    <ellipse cx="44" cy="54" rx="6" ry="4" fill="#f06292" opacity="0.4"/>
+                    <ellipse cx="76" cy="54" rx="6" ry="4" fill="#f06292" opacity="0.4"/>
+                    <!-- Paws -->
+                    <ellipse cx="45" cy="90" rx="6" ry="4" fill="#f8bbd0" stroke="#e91e63" stroke-width="1.5"/>
+                    <ellipse cx="75" cy="90" rx="6" ry="4" fill="#f8bbd0" stroke="#e91e63" stroke-width="1.5"/>
+                    <!-- Pink Rakhi in paws -->
+                    <circle cx="60" cy="92" r="5" fill="none" stroke="#e91e63" stroke-width="2.5"/>
+                    <circle cx="60" cy="92" r="2.5" fill="#e91e63"/>
+                </svg>
+                <span class="offer">🙌</span>
+            </div>
+
+            <!-- ===== QUOTE BOX ===== -->
+            <div class="quote-box" id="quoteBox">
+                <p id="quoteText">
+                    "The thread you tied is not just silk. It's my promise — to protect you, always."
+                    <span class="author">— Your Neesh</span>
+                </p>
+            </div>
+
+            <!-- ===== BUTTONS ===== -->
+            <div class="btns">
+                <button class="pink" id="newQuote"><i class="fas fa-sparkles"></i> New Motivation</button>
+                <button class="outline" id="finalBtn"><i class="fas fa-envelope"></i> Final Words</button>
+            </div>
+
+            <!-- ===== LEARNING ===== -->
+            <div class="learn">
+                <h3><i class="fas fa-book"></i> Small Hops for Big Comebacks</h3>
+                <ul>
+                    <li><strong>Day 1:</strong> Try to learn a new thing everyday 🐰</li>
+                    <li><strong>Day 2:</strong> Learn to say "I am capable" in French 🇫🇷</li>
+                    <li><strong>Day 3:</strong> Write your dream in a paper and read it the Early morning 🌸</li>
+                    <li><strong>Day 4:</strong> Listen to your favourites songs Daily 🎹</li>
+                    <li><strong>Day 5:</strong> Read 1 page of a book you've been avoiding 📖</li>
+                    <li><strong>Day 6:</strong> Write down 3 things you're grateful for ☀️</li>
+                    <li><strong>Day 7:</strong> Look in the mirror and say "I am enough" 💗</li>
+                </ul>
+                <div class="foot"><i class="fas fa-rabbit"></i> One tiny hop every day. That's how mountains are climbed.</div>
+            </div>
+
+            <!-- ===== MUSIC ===== -->
+            <div class="music">
+                <span><i class="fas fa-music"></i> Your Soundtrack</span>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+                </audio>
+            </div>
+
+            <!-- ===== FINAL MESSAGE ===== -->
+            <div class="final" id="finalMsg" style="display:none;">
+                <h2><i class="fas fa-sun"></i> Venisri, This Is Your Dawn</h2>
+                <p>
+                    The rabbit in the story? That's you.<br /><br />
+                    The log? That's this moment. This feeling.<br />
+                    But logs don't last forever. And neither do storms.<br /><br />
+                    <strong>You are not a failed sister.</strong><br />
+                    You are the sister who tied the Rakhi. You remembered. You cared. You loved.<br /><br />
+                    <strong>You are not a failed daughter.</strong><br />
+                    You are a daughter with TWO shields who will NEVER stop protecting you.<br /><br />
+                    <strong>You are not a failed person.</strong><br />
+                    You are a 21-year-old warrior who is RESTING before her biggest victory.<br /><br />
+                    And when you're ready — you will hop.<br />
+                    Not because I told you to. But because the rabbit inside you remembers how.<br /><br />
+                    <strong>Dad's shield + My shield = You are NEVER alone.</strong><br /><br />
+                    Your brother, forever. <i class="fas fa-heart" style="color:#fff;"></i>
+                </p>
+            </div>
+
+        </div>
+        <!-- END MOTIVATION -->
+
+    </div>
+    <!-- END WRAPPER -->
+
+    <script>
+        // ===== QUOTES =====
+        const quotes = [
+            { text: "The thread you tied is not just silk. It's my promise — to protect you, always.", author: "Your Brother" },
+            { text: "Two shields. One family. You are NEVER alone.", author: "Your Brother" },
+            { text: "Rakhi is not a thread. It's a brother's soul tied to his sister's safety.", author: "Your Brother" },
+            { text: "You are not a failed sister. You tied the rakhi. You remembered. That is love.", author: "Your Brother" },
+            { text: "You are not a failure. You are a sister who is surviving.", author: "Your Brother" },
+            { text: "The strongest sisters are the ones who fall and still tie the rakhi with trembling hands.", author: "Your Brother" },
+            { text: "The thread is fragile. My promise to you is not. It's iron wrapped in silk.", author: "Your Brother" },
+            { text: "You think you've failed? Look at this rakhi. It's still here. So are you.", author: "Your Brother" },
+            { text: "Every time I look at this rakhi, I see you. Not your failures. Just you. My sister.", author: "Your Brother" },
+            { text: "You are not a failed daughter. You are a daughter with TWO shields protecting you.", author: "Your Brother" },
+            { text: "The rabbit who thought she couldn't hop — she still tied the rakhi. That's courage.", author: "Your Brother" },
+            { text: "Your tears watered the rakhi. Now it will grow into protection for you.", author: "Your Brother" },
+            { text: "You are 21. You have DECADES to write your story. And I'll be here for all of it.", author: "Your Brother" },
+            { text: "You are not a failed person. You are a person who is failing FORWARD.", author: "Your Brother" },
+            { text: "The rabbit who falls the most learns to fly the highest.", author: "The Rabbit Story" },
+            { text: "What feels like the end is always the beginning of something better.", author: "Your Brother" }
+        ];
+
+        let idx = 0;
+        const quoteText = document.getElementById('quoteText');
+
+        function newQuote() {
+            let n;
+            do { n = Math.floor(Math.random() * quotes.length); } while (n === idx && quotes.length > 1);
+            idx = n;
+            const q = quotes[idx];
+            quoteText.innerHTML = `"${q.text}" <span class="author">— ${q.author}</span>`;
+            document.getElementById('quoteBox').style.transform = 'scale(0.97)';
+            setTimeout(() => {
+                document.getElementById('quoteBox').style.transform = 'scale(1)';
+            }, 150);
+        }
+
+        document.getElementById('newQuote').addEventListener('click', newQuote);
+
+        // ===== FINAL MESSAGE =====
+        const finalMsg = document.getElementById('finalMsg');
+        const finalBtn = document.getElementById('finalBtn');
+
+        finalBtn.addEventListener('click', () => {
+            if (finalMsg.style.display === 'none') {
+                finalMsg.style.display = 'block';
+                finalBtn.innerHTML = '<i class="fas fa-times"></i> Close';
+                setTimeout(() => { finalMsg.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 200);
+            } else {
+                finalMsg.style.display = 'none';
+                finalBtn.innerHTML = '<i class="fas fa-envelope"></i> Final Words';
+            }
+        });
+
+        // ===== OPEN GIFT =====
+        const openBtn = document.getElementById('openBtn');
+        const motivation = document.getElementById('motivation');
+
+        openBtn.addEventListener('click', () => {
+            motivation.classList.toggle('show');
+            if (motivation.classList.contains('show')) {
+                openBtn.innerHTML = '<i class="fas fa-check-circle"></i> Opened! Keep Scrolling <i class="fas fa-arrow-down"></i>';
+                openBtn.style.background = 'linear-gradient(135deg, #ad1457, #880e4f)';
+                setTimeout(() => { motivation.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 300);
+            }
+        });
+
+        // ===== RABBIT CLICK =====
+        document.getElementById('rabbit').addEventListener('click', function() {
+            quoteText.innerHTML = `"🐰 You made the rabbit hop! The Rakhi on her ear shines brighter. You have power over your own joy." <span class="author">— Your Brother</span>`;
+            this.style.animation = 'none';
+            setTimeout(() => { this.style.animation = 'hop 0.4s ease-in-out 3'; }, 10);
+            setTimeout(() => { this.style.animation = ''; }, 2000);
+        });
+
+        // Add hop animation to rabbit
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes hop {
+                0%, 100% { transform: translateY(0) rotate(-2deg); }
+                50% { transform: translateY(-16px) rotate(2deg); }
+            }
+            #rabbit {
+                animation: hop 1.6s ease-in-out infinite;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // ===== AUTO QUOTE =====
+        setInterval(newQuote, 14000);
+
+        // ===== KEYBOARD SHORTCUTS =====
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'q' || e.key === 'Q') newQuote();
+            if (e.key === 'm' || e.key === 'M') finalBtn.click();
+            if (e.key === 'r' || e.key === 'R') document.getElementById('rabbit').click();
+            if (e.key === 'o' || e.key === 'O') openBtn.click();
+        });
+
+        // ===== CONSOLE =====
+        console.log('%c🌸 Venisri — Happy Raksha Bandhan! 🌸', 'font-size: 20px; color: #e91e63; font-weight: bold;');
+        console.log('%c🛡️ Two shields protect you. Always. 🛡️', 'font-size: 14px; color: #e91e63;');
+        console.log('%c🐰 The rabbit believes in you. 🐰', 'font-size: 14px; color: #e91e63;');
+        console.log('%c💗 You are loved. You are enough. 💗', 'font-size: 14px; color: #e91e63;');
+        console.log('%c⌨️ Shortcuts: Q=Quote, M=Message, R=Rabbit, O=Open', 'font-size: 11px; color: #888;');
+    </script>
+
+</body>
+</html>
